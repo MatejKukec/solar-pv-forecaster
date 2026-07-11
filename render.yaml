@@ -1,0 +1,27 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# Connect the repo on Render and it reads this file automatically, or run
+# `render blueprint launch`. Free tier: spins down after inactivity, first
+# request after idle takes ~30-60s to wake up.
+services:
+  - type: web
+    name: solar-pv-forecaster-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:////data/solar_pv.db
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.5-flash
+      - key: CORS_ORIGINS
+        sync: false # set to the deployed frontend URL, e.g. https://your-app.vercel.app
+      - key: DEBUG
+        value: "false"
+    disk:
+      name: solar-pv-data
+      mountPath: /data
+      sizeGB: 1
