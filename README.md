@@ -3,8 +3,7 @@
 [![CI](https://github.com/MatejKukec/solar-pv-forecaster/actions/workflows/ci.yml/badge.svg)](https://github.com/MatejKukec/solar-pv-forecaster/actions/workflows/ci.yml)
 
 PV power forecasting, historical reconstruction, calibration against real production,
-and an AI layer — built as a portfolio demo in a 6-day sprint. React frontend, FastAPI
-+ pvlib backend.
+and an AI layer — built as a portfolio demo in a 6-day sprint.
 
 **Live demo:** not deployed from here — see [`DEPLOYMENT.md`](DEPLOYMENT.md) to deploy
 your own (free tier, ~10 minutes: Render for the backend, Vercel for the frontend).
