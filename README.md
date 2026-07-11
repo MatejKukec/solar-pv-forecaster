@@ -1,6 +1,6 @@
 # Solar PV Forecaster
 
-[![CI](https://github.com/OWNER/REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/ci.yml)
+[![CI](https://github.com/MatejKukec/solar-pv-forecaster/actions/workflows/ci.yml/badge.svg)](https://github.com/MatejKukec/solar-pv-forecaster/actions/workflows/ci.yml)
 
 *Replace `OWNER/REPO` above once pushed to GitHub — the badge goes green automatically
 once `.github/workflows/ci.yml` runs (see [`DEPLOYMENT.md`](DEPLOYMENT.md) step 1).*
