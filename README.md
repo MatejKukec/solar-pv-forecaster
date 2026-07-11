@@ -2,9 +2,6 @@
 
 [![CI](https://github.com/MatejKukec/solar-pv-forecaster/actions/workflows/ci.yml/badge.svg)](https://github.com/MatejKukec/solar-pv-forecaster/actions/workflows/ci.yml)
 
-*Replace `OWNER/REPO` above once pushed to GitHub — the badge goes green automatically
-once `.github/workflows/ci.yml` runs (see [`DEPLOYMENT.md`](DEPLOYMENT.md) step 1).*
-
 PV power forecasting, historical reconstruction, calibration against real production,
 and an AI layer — built as a portfolio demo in a 6-day sprint. React frontend, FastAPI
 + pvlib backend.
